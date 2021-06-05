@@ -1,18 +1,36 @@
 html {
-    margin: 0;
-    padding: 0;
+    background-color: #DAD7CD;
+    height: 100%;
 }
 
 /* Using web safe font for compatibility */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #A3B18A 50%, #DAD7CD 50%);
+}
+
+h1 {
+    color: #344E41
 
 }
 
 .profilepic {
-    border-radius: 50%;
+    border-radius: 20%;
     
 }
 img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 186, 71, 0.5);
+    box-shadow: #A3B18A;
+}
+
+.opening {
+    background-color: #A3B18A;
+    padding: 15px;
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
 }
