@@ -1,0 +1,18 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Using web safe font for compatibility */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.profilepic {
+    border-radius: 50%;
+    
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 186, 71, 0.5);
+}
