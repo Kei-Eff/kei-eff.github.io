@@ -4,10 +4,12 @@
     <title>Home | Karl Alberto's Portfolio</title>
     <link rel="icon" type="image/png" href="../docs/karlFavicon.png" />
     <link rel="stylesheet" href="index-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&family=Play:wght@400;700&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="main-navbar">
         <nav>
             <a href="index.html">Home</a> |
             <a href="work.html">Work</a> |
@@ -16,27 +18,52 @@
         </nav>
     </div>
 
-    <h1>Karl's Portfolio</h1>
-    <h6>(That's Karl <em>with a <strong>K</strong></em>, please.)</h6>
-    <!-- People still get this wrong even when it's there in my email address --> 
-    <hr />
 
-    <section>
-        <h3>About Me</h3>
-        <img class="profilepic" src="../docs/karlPorg.jpg" alt="Karl in a Porg costume" height= 300px />
-        <section class="opening">
+    <header id="intro">
+    <h1>Karl ALBERTO</h1>
+    </header>
+
+    <!-- included 'About Me' intro with photo section from wireframe for balance -->
+    <section class="main">
+        <section id="about">
+            <img class="profilepic" src="../docs/porgKarl.jpg" alt="Karl in a Porg costume" height= 300px />
+            <img class="profilepic" src="../docs/karlPokemon.jpg" alt="Karl in a Porg costume" height= 300px />
+            <img class="profilepic" src="../docs/karlSquidward.jpg" alt="Karl in a Porg costume" height= 300px />
+            
+            <section>
+                <h3>About Me</h3>            
+                <p id="introduction">
+                    Hi, I'm Karl. I have a background in Marketing and Advertising, as well as Customer Service and Community Management. I've now finally decided it's time for a new challenge, and am taking the plunge into web development, cloud, and cyber-security!
+                </p>
+            </section>
+            <br />
+        </section>
+
+        <!-- Added ids and class tags pre-emptively, to play around with sections in CSS -->
+        <section id="interests">
             <p>
-                <h4>Hi, I'm Karl. I have a background in Marketing and Advertising, as well as Customer Service and Community Management. I've now finally decided it's time for a new challenge, and am taking the plunge into web development, cloud, and cyber-security!</h4>
+                My interests are varied, to the point of being ecclectic. You can find me nose deep reading up on anything: from video games to deep sea exploration; Formula 1 to tiny homes; mechanical keyboards to Roman antiquity - and this barely scratches the surface!
             </p>
-            <p>
-                My interests are wide-ranging, and somewhat ecclectic when you put it altogether. You can find me nose deep catching up on anything from video games to coffee; Formula 1 to cosplay; mechanical keyboards to tiny homes, and so many other things in between!
+            <p> While I <em>do</em> research into <em>too many</em> things, my main passions right now include:
+                <ul>
+                    <li><a href="https://www.instagram.com/adorable.cosplay/">Cosplay</a> (mostly production, but I will put on an outfit for my kids)</li>
+                    <li>Origami</li>
+                    <li>Custom mechanical keyboards</li>
+                    <li>Coffee</li>
+                    <li>Video games</li>
+                    <li>3D printing</li>
+                </ul>
+            </p>
+            <br />
+        </section>
 
+        <section id="persona">
             <p>
-                I'm generally soft-spoken and introverted in real life. Put me behind on a keyboard and monitor though, and I can get fairly chatty. If you do see me out and about though, you can talk to me - I'm shy, not completely anti-social <em>(I think)</em>.
+                I'm generally soft-spoken and introverted in real life, but put me on digital platform, and I can get fairly chatty. If you do see me out and about though, you can talk to me - I'm shy, but not completely anti-social <em>(I think)</em>.
             </p>
             <p>
                 Life is currently a balancing act between study and parenthood, but I'm keen to get back into the office life once I've acquired some more skills. Keep an eye out for my CV in your inbox soon!
-        </p>
+            </p>
         </section>
     </section>
 
@@ -44,6 +71,19 @@
         
     </section>
 
+    <div>
+    <footer>
+        <nav class="socials">
+            <ul style="list-style-type:none;">
+                <li><a href="https://www.linkedin.com/in/karl-francis-alberto">LinkedIn</a></li>
+                <li><a href="https://twitter.com/Kei_Eff">Twitter</a></li>
+                <li><a href="https://stackoverflow.com/users/15528466/kei">Stackoverflow</a></li>
+                <li><a href="https://github.com/Kei-Eff">Github</a></li>
+            </ul>
+
+        </nav>
+    </footer>
+    </div>
 
 
 </body>
