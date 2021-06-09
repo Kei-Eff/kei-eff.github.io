@@ -7,6 +7,7 @@ body {
 
 body {
     font-family: "Work Sans", sans-serif;
+    font-size: 1.5em;
 }
 
 header, section {
@@ -67,9 +68,23 @@ header img {
     background-color: #B6C8A9;
 }
 
+#contents ul {
+    list-style: none;
+}
+
+#contents ul > li {
+    padding-top: 15px;
+}
+
+#contents ul > li > a {
+    color: #695958;
+    text-decoration: none;
+    font-size: large;
+}
+
 .post-title {
     font-family: "Play", sans-serif;
-    font-size: large;
+    font-size: 2em;
     margin-top: 100px;
     margin-bottom: 10px;
 }
@@ -86,5 +101,170 @@ h5 {
 .post-img {
     width: 300px;
     height: auto;
+    border-radius: 50%;
 }
 
+.post-date {
+    font-style: italic;
+}
+
+
+footer {
+    background-color: #151613;
+    color: #CFFFE5;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #EFBA8B;
+    text-decoration: none;
+}
+
+#socials ul {
+    list-style: none;
+    font-size: large;
+    display: flex;
+    padding: 0px;
+}
+
+#socials ul > li {
+    padding-right: 15px;
+}
+
+
+footer div > span {
+    font-size: large;
+}
+
+
+/* Tablet screen media breakpoint. Based on iPad Pro max screen size, and smaller tablets/phablets min size */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header h1 {
+        display: none;
+    }
+
+    header img {
+        display: block;
+    }
+
+    #contents div > ul > li {
+        padding: 10px;
+    }
+
+    .post-title {
+        margin-top: 30px;
+    }
+
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer ul > li {
+        font-size: large;
+        display: inline;
+    }
+
+    footer div > span {
+        font-size: large;
+    }
+
+}
+
+
+/* Smartphone screen media breakpoint, covers most modern smartphone screen sizes */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+    .post-title {
+        margin-top: 30px;
+    }
+
+    #contents div > ul {
+        padding-left: 0px;
+    }
+
+    #contents div > ul > li {
+        padding-top: 15px;
+    }
+
+    #main-nav {        
+        width: 100%;
+    }
+
+    #main-nav ul {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    #main-nav ul > li {
+        width: 100%;        
+    }    
+    header {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 0;
+    }
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer ul > li {
+        font-size: smaller;
+    }
+
+    footer div > span {
+        font-size: smaller;
+    }
+    
+}
+
+
+/* Set specifically to fit into the 'Galaxy Fold' smaller front screen (found in Chrome inspect view). Should also cover smaller/older smartphones */
+@media screen and (max-width: 280px) {    
+    .post-img {
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer ul > li {
+        font-size: small;        
+    }
+
+    #socials ul > li {        
+        padding-right: 5px;
+    }
+
+    footer div > span {
+        font-size: small;
+    }
+
+}

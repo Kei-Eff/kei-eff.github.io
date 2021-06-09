@@ -1,54 +1,325 @@
-html {
-    background-color: #B6C8A9;
-    height: 75%;
-    margin: 5px;
-    margin-bottom: 20px;
-
-}
-
-/* Using Google web fonts for compatibility */
+html,
 body {
-    font-family: 'Noto Sans JP', sans-serif;
-    text-shadow: #B6C8A9;
-    
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    height: 100%;
-    background: linear-gradient(0deg, #B6C8A9 70%, #C8EAD3 30%);
-    border: 0px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.5em;
 }
 
+header, section {
+    padding: 20px;
+}
+
+header {
+    background-color: #151613;
+    color: #C8EAD3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+header img {
+    display: none;
+}
+
+#main-nav ul {
+    list-style: none;
+    font-family: "Play", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#main-nav ul > li {
+    border: solid 1px #B6C8A9;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+#main-nav ul > li:hover {
+    background-color: #CFFFE5;
+}
+
+#main-nav ul > li:hover > a {
+    color: #151613;
+}
+
+#main-nav ul > li > a {
+    color: #CFFFE5;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#about-pic img {
+    border-radius: 50%;
+}
+
+/* Used flex to have opening spiel in line with picture */
 #about {
     background-color: #C8EAD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Larger font and weight to emphasise element */
+#about-me {
+    color: #151613;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#about-me h3, #about-me p {
     padding-left: 20px;
 }
 
-h1 {
-    color: #151613;
-    font-family: 'Play', sans-serif;
-
+#interests {
+    background-color: #CEDADA;
 }
 
-#intro {
-    color: #151613;
-    font-size: xx-large;
-    font-weight: bolder;
+#interests ul > li > a {
+    color: #695958;
 }
 
-.profilepic {
-    border-radius: 50%;
-      
+#persona {
+    background-color: #C8EAD3;
 }
 
-
-#introduction {
-    font-size: large;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-}
-
-/*#about {
+#interests div {
+    padding: 30px 20px;
     display: flex;
-    flex-direction: row;
-}*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+#interest-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+
+/* Added padding to following two elements to balance/fill out the page */
+#persona {
+    padding-top: 30px;
+}
+
+#closing {
+    padding-bottom: 80px;
+}
+
+
+footer {
+    background-color: #151613;
+    color: #CFFFE5;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #EFBA8B;
+    text-decoration: none;
+}
+
+#socials ul {
+    list-style: none;
+    font-size: large;
+    display: flex;
+    padding: 0px;
+}
+
+#socials ul > li {
+    padding-right: 15px;
+}
+
+
+footer div > span {
+    font-size: large;
+}
+
+
+/* Tablet screen media breakpoint. Based on iPad Pro max screen size, and smaller tablets/phablets min size */
+/* Easter egg: logo only (no name) displays on tablet layout only */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header h1 {
+        display: none;
+    }
+
+    header img {
+        display: block;
+    }
+
+    #about-me {
+        margin-left: 10px;
+    }
+
+    #interest-pic img {
+        width: 130px;
+        height: auto;
+    }
+
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer ul > li {
+        font-size: large;
+        display: inline;
+    }
+
+    footer div > span {
+        font-size: large;
+    }
+
+}
+
+
+/* Smartphone screen media breakpoint, covers most modern smartphone screen sizes */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+    #about {
+        flex-wrap: wrap;
+    }
+    #main-nav {        
+        width: 100%;
+    }
+
+    #main-nav ul {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    #main-nav ul > li {
+        width: 100%;        
+    }    
+    header {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 0;
+    }
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    header img {
+        display: none;
+    }
+
+    #interests div {
+        padding: 10px 0px;
+    }
+
+    #interest-pic img {
+        width: 100px;
+        height: auto;
+    }
+
+    #about-me h3, #about-me p {
+        padding-left: 0;
+    }
+
+    .cull-img {
+        display: none;
+    }
+
+    /* Adjusted padding again for smaller screens */
+    #persona {
+        padding-top: 20px;
+    }
+    
+    #closing {
+        padding-bottom: 20px;
+    }
+    
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer ul > li {
+        font-size: smaller;
+    }
+
+    footer div > span {
+        font-size: smaller;
+    }
+    
+}
+
+
+/* Set specifically to fit into the 'Galaxy Fold' smaller front screen (found in Chrome inspect view). Should also cover smaller/older smartphones */
+@media screen and (max-width: 280px) {
+    #about-pic img {
+        width: 50%;
+        height: auto;
+    }
+    
+    #about-pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #interests div {
+        padding: 5px 0px;
+    }
+
+    #interest-pic img {
+        width: 80px;
+        height: auto;
+    }
+
+    #persona {
+        padding-top: 15px;
+    }
+    
+    #closing {
+        padding-bottom: 10px;
+    }
+
+    footer {
+        padding: 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer ul > li {
+        font-size: small;        
+    }
+
+    #socials ul > li {        
+        padding-right: 5px;
+    }
+
+    footer div > span {
+        font-size: small;
+    }
+
+}
+

@@ -7,6 +7,7 @@ body {
 
 body {
     font-family: "Work Sans", sans-serif;
+    font-size: 1.5em;
 }
 
 header, section {
@@ -169,6 +170,10 @@ footer div > span {
 
 /* Smartphone screen media breakpoint, covers most modern smartphone screen sizes */
 @media screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+    
     #about {
         flex-wrap: wrap;
     }
@@ -249,8 +254,6 @@ footer div > span {
     footer div > span {
         font-size: small;
     }
-
-
 
 }
 
