@@ -1,0 +1,90 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+header, section {
+    padding: 20px;
+}
+
+header {
+    background-color: #151613;
+    color: #C8EAD3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+header img {
+    display: none;
+}
+
+#main-nav ul {
+    list-style: none;
+    font-family: "Play", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#main-nav ul > li {
+    border: solid 1px #B6C8A9;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+#main-nav ul > li:hover {
+    background-color: #CFFFE5;
+}
+
+#main-nav ul > li:hover > a {
+    color: #151613;
+}
+
+#main-nav ul > li > a {
+    color: #CFFFE5;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#top {
+    background-color: #C8EAD3;
+}
+
+#contents {
+    background-color: #B6C8A9;
+}
+
+.post-title {
+    font-family: "Play", sans-serif;
+    font-size: large;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.blog-post {
+    background-color: #CEDADA;
+}
+
+.post-img {
+    width: 300px;
+    height: auto;
+}
+

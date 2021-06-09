@@ -104,7 +104,7 @@ header img {
 footer {
     background-color: #151613;
     color: #CFFFE5;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -124,7 +124,7 @@ footer a {
 }
 
 #socials ul > li {
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 
@@ -239,7 +239,11 @@ footer div > span {
     }
 
     footer ul > li {
-        font-size: small;
+        font-size: small;        
+    }
+
+    #socials ul > li {        
+        padding-right: 5px;
     }
 
     footer div > span {
