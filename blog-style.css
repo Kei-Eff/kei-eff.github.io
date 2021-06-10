@@ -109,6 +109,11 @@ h5 {
     font-style: italic;
 }
 
+.top-link {
+    color: #695958;
+    text-decoration: none;
+}
+
 
 footer {
     background-color: #151613;

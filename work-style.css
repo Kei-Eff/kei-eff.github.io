@@ -65,12 +65,13 @@ header img {
     border-radius: 50%;
 }
 
-/* Larger font and weight to emphasise element */
 #goals {
     color: #151613;
-    font-size: large;
-    font-weight: bold;
     margin-left: 20px;
+}
+
+#goals h2 {
+    font-weight: bold;
 }
 
 #about {

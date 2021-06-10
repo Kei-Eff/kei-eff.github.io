@@ -76,12 +76,14 @@ header img {
 /* Larger font and weight to emphasise element */
 #about-me {
     color: #151613;
-    font-size: larger;
-    font-weight: bold;
     margin-left: 20px;
 }
 
-#about-me h3, #about-me p {
+#about-me h2 {
+    font-weight: bold;
+}
+
+#about-me h2, #about-me p {
     padding-left: 20px;
 }
 
