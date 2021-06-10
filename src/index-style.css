@@ -29,6 +29,7 @@ header h1 {
 }
 
 header img {
+    border-radius: 50%;
     display: none;
 }
 
@@ -163,6 +164,11 @@ footer div > span {
         display: block;
     }
 
+    #about-pic img {
+        width: 250px;
+        height: auto;
+    }
+
     #about-me {
         margin-left: 10px;
     }
@@ -227,6 +233,11 @@ footer div > span {
         display: none;
     }
 
+    #about-pic img {
+        width: 200px;
+        height: auto;
+    }
+
     #interests div {
         padding: 10px 0px;
     }
@@ -254,15 +265,14 @@ footer div > span {
     }
     
     footer {
-        padding: 10px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
     }
 
     footer ul > li {
-        font-size: smaller;
+        font-size: 14px;
     }
 
     footer div > span {

@@ -29,6 +29,7 @@ header h1 {
 }
 
 header img {
+    border-radius: 50%;
     display: none;
 }
 
@@ -159,6 +160,11 @@ footer div > span {
         margin-top: 30px;
     }
 
+    .post-img {
+        width: 250px;
+        height: auto;
+    }
+
     footer {
         padding: 10px;
         display: flex;
@@ -220,7 +226,7 @@ footer div > span {
     }
 
     footer {
-        padding: 10px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -228,7 +234,7 @@ footer div > span {
     }
 
     footer ul > li {
-        font-size: smaller;
+        font-size: 14px;
     }
 
     footer div > span {

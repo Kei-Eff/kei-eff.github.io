@@ -29,6 +29,7 @@ header h1 {
 }
 
 header img {
+    border-radius: 50%;
     display: none;
 }
 
@@ -90,6 +91,12 @@ textarea {
     font-size: 0.8em;
 }
 
+input[type=submit] {
+    background-color: #EFBA8B;
+    width: 8em;
+}
+
+
 
 footer {
     background-color: #151613;
@@ -142,7 +149,7 @@ footer div > span {
     }
 
     footer {
-        padding: 10px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -210,7 +217,7 @@ footer div > span {
     }
 
     footer ul > li {
-        font-size: smaller;
+        font-size: 14px;
     }
 
     footer div > span {

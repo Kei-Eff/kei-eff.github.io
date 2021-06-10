@@ -29,6 +29,7 @@ header h1 {
 }
 
 header img {
+    border-radius: 50%;
     display: none;
 }
 
@@ -61,7 +62,7 @@ header img {
 }
 
 #profilepic img {
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 /* Larger font and weight to emphasise element */
@@ -173,7 +174,7 @@ footer div > span {
     body {
         font-size: 1em;
     }
-    
+
     #about {
         flex-wrap: wrap;
     }
@@ -213,7 +214,7 @@ footer div > span {
     }
 
     footer ul > li {
-        font-size: smaller;
+        font-size: 14px;
     }
 
     footer div > span {
