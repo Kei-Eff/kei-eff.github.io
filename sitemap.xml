@@ -1,1 +1,34 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://kei-eff.github.io/</loc>
+	<lastmod>2021-06-10T10:45:08+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://kei-eff.github.io/index.html</loc>
+	<lastmod>2021-06-10T10:45:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://kei-eff.github.io/work.html</loc>
+	<lastmod>2021-06-10T10:45:12+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://kei-eff.github.io/blog.html</loc>
+	<lastmod>2021-06-10T10:45:12+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://kei-eff.github.io/contact.html</loc>
+	<lastmod>2021-06-10T10:45:13+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://kei-eff.github.io/assets/karlAlberto-resume.pdf</loc>
+	<lastmod>2021-06-10T10:45:15+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
