@@ -33,6 +33,7 @@ header img {
     display: none;
 }
 
+/* Spent too long working out pseudo classes for hover elements, but they work! */
 #main-nav ul {
     list-style: none;
     font-family: "Play", sans-serif;
@@ -65,7 +66,7 @@ header img {
     border-radius: 50%;
 }
 
-/* Used flex to have opening spiel in line with picture */
+/* Used flex to have opening description in line with picture */
 #about {
     background-color: #C8EAD3;
     display: flex;
@@ -123,6 +124,7 @@ header img {
 }
 
 
+/* Footer design consistent throughout site and media breakpoints */
 footer {
     background-color: #151613;
     color: #CFFFE5;
